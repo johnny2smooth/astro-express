@@ -1,5 +1,6 @@
 ---
-const title = Astro.locals.title;
+import Test from '../components/Test.astro';
+const name = 'Johnny';
 ---
 
 <html lang="en">
@@ -11,7 +12,8 @@ const title = Astro.locals.title;
     <title>Astro</title>
   </head>
   <body>
-    <h1>{title}</h1>
-    <h2>This is something special weeeeeheeeee</h2>
+    <h1>hi there</h1>
+    <div>{name}</div>
+    <Test />
   </body>
 </html>
